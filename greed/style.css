@@ -1,0 +1,65 @@
+Обнуление
+*{padding:0;margin:0;border:0;}
+*,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;}
+:focus,:active{outline:none;}
+a:focus,a:active{outline:none;}
+nav,footer,header,aside{display:block;}
+html,body{height:100%;width:100%;font-size:100%;line-height:1;font-size:14px;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display:none;}
+button{cursor:pointer;}
+button::-moz-focus-inner{padding:0;border:0;}
+a,a:visited{text-decoration:none;}
+a:hover{text-decoration:none;}
+ul li{list-style:none;}
+img{vertical-align:top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}
+/*--------------------*/
+.wraper{
+   margin: 50px auto;
+   display: grid;
+   max-width: 1300px;
+   grid-template-columns: 30% 70%;
+   grid-template-rows: 70px minmax(400px, 1fr) 60px;
+   grid-template-areas:
+   "header header"
+   "nav content"
+   "futer futer";
+   row-gap: 5px;
+   column-gap: 5px;
+}
+.grid{
+   /* border: 2px dashed gray; */
+   padding: 30px;
+   text-align: center;
+   
+   }
+   .g1{
+   position: relative;
+   grid-area: header;
+   background: rgb(76, 79, 247);
+   }
+   .g1 img{
+   height: 60px;
+   position: absolute;
+   border-radius: 60%;
+   top:5px;
+   left:5px
+}
+
+   .g2{
+      grid-area: nav;
+      background: rgba(7, 3, 58, 0.3);
+      
+   }
+
+   .g3{
+      grid-area: content;
+      background: rgba(150, 235, 71, 0.3);
+      
+   }
+   .g4{
+      grid-area: futer;
+      background: rgba(2, 111, 55, 0.3);
+      
+   }
