@@ -1,0 +1,193 @@
+      div {
+          margin-bottom: 30pt;
+      }
+      
+      #menu1 {
+          color: blue;
+      }
+      
+      #menu1 a:link,
+      #menu1 a:visited {
+          color: blue;
+          text-decoration: none;
+          font: 10pt/1.5 Arial;
+      }
+      
+      #menu1 a:hover {
+          color: red;
+          text-decoration: underline;
+      }
+      
+      #menu2 a:link,
+      #menu2 a:visited {
+          color: blue;
+          text-decoration: none;
+          font: 10pt/1.5 Arial;
+      }
+      
+      #menu2 a:hover {
+          color: blue;
+          text-decoration: none;
+          font-weight: bold;
+      }
+      
+      #menu2 li {
+          list-style-type: none;
+          /*убирает маркеры*/
+          border: 1px solid blue;
+          width: 200px;
+          margin-bottom: 5pt;
+          padding: 3pt;
+      }
+      
+      #menu2 a {
+          display: block;
+          /*при наведении курсора на любую область ячейки ссылка будет работать, а не только при наведении на слова самой ссылки*/
+      }
+      
+      #menu3 a {
+          display: block;
+          border: 1px solid black;
+          padding: 3pt;
+      }
+      
+      #menu3 a:link,
+      #menu3 a:visited {
+          color: white;
+          background-color: rgb(99, 95, 102);
+          text-decoration: none;
+          font: bold 10pt/1.5 Arial;
+      }
+      
+      #menu3 a:hover {
+          color: black;
+          font-weight: bold;
+          background-color: white;
+      }
+      
+      #menu3 li {
+          list-style-type: none;
+          /*убирает маркеры*/
+          width: 200px;
+          margin-bottom: 5pt;
+      }
+      
+      #menu4 a {
+          display: block;
+          border: 1px solid rgb(4, 168, 233);
+          padding: 3pt;
+      }
+      
+      #menu4 a:link,
+      #menu4 a:visited {
+          color: white;
+          background-color: rgb(4, 168, 233);
+          text-decoration: none;
+          font: bold 10pt/1.5 Arial;
+      }
+      
+      #menu4 a:hover,
+      #menu4 a.active
+      /*#menu4 a.active - задается постоянно активная ссылка для класса active, который прописывается в HTML документе*/
+      
+      {
+          color: rgb(4, 168, 233);
+          font-weight: bold;
+          background: white url("b-52.png") no-repeat 90% center;
+          /*задний фон белый, с картинкой, которая не повторяется и сдвиг слева 90%, находится по центру между верхом и низом*/
+      }
+      
+      #menu4 li {
+          list-style-type: none;
+          /*убирает маркеры*/
+          width: 200px;
+          margin-bottom: 5pt;
+      }
+      
+      #menu6 {
+          color: blue;
+      }
+      
+      #menu6 a:link,
+      #menu6 a:visited {
+          color: blue;
+          text-decoration: none;
+          font: 10pt/1.5 Arial;
+      }
+      
+      #menu6 a:hover {
+          color: red;
+          text-decoration: none;
+      }
+      
+      #menu6 li {
+          float: left;
+          /*делаем минюшки в ряд, недостатки: нужно убирать маркеры и если снизу есть объекты, то они будут наезжать на меню, т.е. нужно убирать наплыв*/
+          list-style-type: none;
+          /*убираем маркеры*/
+          margin-right: 3px;
+          /*делаем отступы между менюшками*/
+          border: 1px solid black;
+          padding: 3px;
+      }
+      
+      .clearfix {
+          clear: both;
+          /*убирает наплыв минюшки на объект снизу, также задается в файле HTML*/
+      }
+      
+      #menu5 {
+          color: blue;
+      }
+      
+      #menu5 a:link,
+      #menu5 a:visited {
+          color: blue;
+          text-decoration: none;
+          font: 10pt/1.5 Arial;
+      }
+      
+      #menu5 a:hover {
+          color: red;
+          text-decoration: none;
+      }
+      
+      #menu5 li {
+          display: inline-block;
+          /*делаем минюшки в ряд, недостатки: всегда есть отступы между менюшками*/
+          border: 1px solid black;
+          padding: 3px;
+      }
+      
+      #menu7 a {
+          display: block;
+          border: 1px solid rgb(255, 176, 5);
+          padding: 5px 10px 5px 10px;
+          text-align: center;
+      }
+      
+      #menu7 a:link,
+      #menu7 a:visited {
+          color: white;
+          background-color: rgb(255, 176, 5);
+          text-decoration: none;
+          font: 10pt/1.5 Arial;
+      }
+      
+      #menu7 a:hover {
+          color: white;
+          background-color: rgb(250, 84, 7);
+      }
+      
+      #menu7 li {
+          display: inline-block;
+      }
+      
+      #menu7 ul {
+          border: 0px solid rgb(255, 176, 5);
+          background-color: rgb(255, 176, 5);
+          margin: 40px;
+          /*отступ рамки от границ листа*/
+          padding-left: 10pt;
+          /*отступ слева ссылки от левой границы фона*/
+      }
