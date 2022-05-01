@@ -1,0 +1,41 @@
+#red {
+    width: 400px;
+    height: 300px;
+    border: 10px solid red;
+    outline: 60px solid green;
+    outline-offset: 15px;
+    /*отступ от внешней рамки, может быть отрицательным*/
+    background-color: hotpink;
+    margin: 90pt 10pt 10pt 70pt;
+    /*outline используется если необходимо задать жесткие рамки*/
+}
+
+
+/* #green {
+            height: 200px;
+            width: 200px;
+            border: 1px solid green;
+            /*margin: 30px;отступ от внутренней границы*/
+
+
+/*margin: 10px 20px 30px 40px; если одно значение значит отступы от всех границ одинаковые, два-первое сверху т низу, второе слева и права, три-первое сверху, второе слева и справа, третье снизу*/
+
+
+/*margin-bottom: 30px;отступы слева, справа, сверху  top, снизу bottom*/
+
+
+/*margin-bottom: 20px;
+	 margin-left: 30px; можно регулировать отступы от каждой из сторон, записав несеолько свойств последовательно*/
+
+
+/* margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: auto;
+            margin-right: auto; значение auto центрует, значение auto можно применять к общему свойству margin, например: margin: 10px auto 40px}*/
+
+
+/*div {
+    width: 300px;
+    border: 1px solid red;
+    text-align: justify;
+    padding: 30px; свойство padding делает отступы от рамки вовнутрь при работе с текстом, все остальные возможности схожи с margin}*/

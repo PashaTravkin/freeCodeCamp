@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Форма поиска в яндексе</title>
+    <style>
+        .forma {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="https://www.google.by/search" target="blank" class="forma">
+        <!--после ввода текста в форму направляет по этому адресу, открывает на новой странице, форма по центру-->
+        <input type="text" name="q">
+        <input type="submit" value="Найти в Google">
+    </form>
+    <br>
+
+    <form method="post" action="/login/" target="blank">
+        <table>
+            <tr>
+                <td><label for="loginField">Логин</label></td>
+                <td><input id="loginField" type="text" name="login"></td>
+
+            </tr>
+            <tr>
+                <td><label for="passwordField">Password</label></td>
+                <td><input id="passwordField" type="password" name="password"></td>
+                <!--type "password" делает ввод пароля секьюрным-->
+
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center"><input type="submit" value="Войти"></td>
+
+
+            </tr>
+        </table>
+    </form>
+    <p>
+        <form method="post" action="/im/">
+            <label for="nameFild">Имя</label>
+            <br>
+            <input id="nameFild" type="text" size="30" name="name">
+            <br>
+            <label for="massageField">Сообщение</label> <br>
+            <textarea id="massageField" name="message" type="text" cols="50" rows="10">Введите здесь свое сообщение...</textarea>
+            <br>
+            <input type="submit" value="Отправить сообщение">
+        </form>
+        <br>
+        <form action="/order">
+            <label>
+			Завтрак
+			<input type="checkbox" name="brecfast" checked>
+			</label>
+            <br>
+            <label>
+			Обед
+			<input type="checkbox" name="lunch">
+			</label>
+            <br>
+            <label>
+			Ужин
+			<input type="checkbox" name="dinner">
+			</label>
+        </form>
+        <br>
+        <form action="/order">
+            Выбирите цвет футболки:
+            <br>
+            <label>
+			<input type="radio" name="color" value="red"> красная
+			</label>
+            <br>
+            <label>
+			<input type="radio" name="color" value="blue" checked> синяя
+			</label>
+            <br>
+            <label>
+			<input type="radio" name="color" value="green"> зеленая
+			</label>
+        </form>
+        <br>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <label for="fileField">Выбирите файл для загрузки:</label>
+            <br>
+            <input id="fileField" type="file" name="uploadingFile">
+        </form>
+</body>
+
+</html>
