@@ -1,0 +1,52 @@
+h1 {
+	width: 500pt;
+	color: red;
+	text-align: center;
+}
+h2 {
+	color: green;
+}
+ol {
+	color: red;
+}	
+
+p {
+	font: 12pt/2 Arial;
+	width: 480pt;
+	text-align: justify;
+	text-decoration: line-through;
+}
+em {
+	color: blue;
+	font-weight: bold;
+}
+
+ul {
+	/*color: #800080;*/
+	/*text-align: left;*/
+	/*width: 500pt;
+	font-style: italic;
+	font-size: 16pt;*/
+}
+strong {
+	font-size: 16pt;
+	color: red;
+}
+
+
+a:link {
+	color: red;
+	text-decoration: none
+}
+
+a:visited {
+	color: green;
+}
+a:hover {
+	color: black;
+}
+a:active {
+	color: blue;
+}
+
+
