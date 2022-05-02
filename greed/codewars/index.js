@@ -15,7 +15,9 @@ function countPositivesSumNegatives(input) {
                 sum += input[i];
             }
         }
-        return [number, sum];
+        if (number == 0 && sum == 0) {
+            return [];
+        } else return [number, sum];
     } else {
         return [];
     }
