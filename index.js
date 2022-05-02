@@ -21,5 +21,5 @@ function countPositivesSumNegatives(input) {
     } else {
         return [];
     }
-    fgergtete
+    67567
 }
