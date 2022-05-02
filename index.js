@@ -21,5 +21,5 @@ function countPositivesSumNegatives(input) {
     } else {
         return [];
     }
-    67567
+    67567c
 }
